@@ -5,23 +5,47 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Short URL</title>
+    <title>Link Shortner</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{%url 'home'%}">Short Link</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <nav class="menu">
+    <div class="nav-left">
+      <ul>
+        <li>
+          <a href="/"
+            >Vikki's Link Shortner</span
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <ul>
+      <li class="icons">
+          
+      <a id="toggle-nav" onclick="toggleNav()">
+          <i class="fa fa-bars"></i>
+      </a>
+        </li>
+      </ul>
+      <ul id="links">
+        <li><a href="mailto:vikalsingh@tuta.io">contact</a></li>
+        <li><a target="_blank" href="https://github.com/link-shortner">source code</a></li>
+        <li><a class="nav-link" href="{% url 'api' %}">API</a></li>
+        <li><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+        <li><a target="_blank" href="https://github.com/heyvikki">github</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'api' %}">API</a>
+        
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'about' %}">About Us</a>
+        
       </li>
 
       
